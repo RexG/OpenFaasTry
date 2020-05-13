@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://192.168.3.81:31112
+functions:
+  hello-world:
+    lang: python
+    handler: ./hello-world
+    image: openfaas-hello-world:latest
+
